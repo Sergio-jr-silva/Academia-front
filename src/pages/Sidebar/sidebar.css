@@ -1,0 +1,46 @@
+.sidebar_button {
+  display: none;
+}
+
+.sidebar {
+  display: none;
+}
+
+@media (max-width: 768px){
+
+/* Botão */
+  .sidebar_button{
+  top: 6%;
+  left: 84%;
+  position: absolute;
+  display: flex;
+  font-size: 30px;
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Menu */
+
+.sidebar{
+    background-color: #0000007a; 
+    position: absolute;
+    top: 15%;
+    display: block;
+    margin: auto;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    color: #fff;
+}
+
+li a {
+  justify-content: center;
+  display: block;
+  width: auto;
+}
+
+}
+

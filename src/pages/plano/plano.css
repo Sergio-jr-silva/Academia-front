@@ -1,0 +1,90 @@
+.card{
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-back{
+  width: 350px;
+  height: 600px;
+  border-radius: 20px;
+}
+
+h3{
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+h4{
+    font-size: 30px;
+    margin-top: 20%;
+    margin-left: 30%;
+    
+}
+
+.yellow{
+background: rgb(224, 222, 222);
+}
+
+.comprar{
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 5px 20px 5px 20px;
+  background-color: black;
+  margin-left: 22%;
+  margin-top: 20px;
+}
+
+p{
+  font-size: 14px;
+  margin-bottom: 20px;
+ text-align: center;
+}
+
+li{
+  list-style: none;
+  margin-top: 30px;
+ text-align: center;
+}
+
+.iconRed{
+    color: red;
+}
+
+.iconGreen{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  color: green;
+}
+
+.comprar:hover{
+  background-color: rgb(39, 38, 38);
+  transition: 0.3s all;
+}
+
+
+#basic{
+  color: rgb(0, 0, 0);
+}
+
+#medium{
+  color: rgb(151, 151, 21);
+}
+
+#medium a{
+  background-color: rgb(176, 176, 9);
+}
+
+#premium{
+  color: rgb(203, 60, 235);
+}
+
+#premium a{
+  background-color: rgb(208, 0, 255);
+}

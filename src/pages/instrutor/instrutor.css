@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+}
+.box-instrutor{
+    margin-left: 30px;
+    display: flex;
+    width: 90%;
+    height: 50%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.img-box{
+    background-color: rgba(255, 255, 255, 0.568);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px  0 0 20px;
+}
+.img-box img{
+    width: 80%;
+}
+.form-box-instrutor{
+    background-color: rgba(255, 255, 255, 0.637);
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+}
+
+
+.form-box-instrutor h2{
+    margin-top: -20px; 
+    margin-bottom: 20px;   
+}
+
+.form-box-instrutor p{
+    font-weight: bold;
+    color: #3D3D3D;
+}
+.form-box-instrutor p a{
+    color: blue;
+    text-decoration: none;
+}
+.form-box-instrutor form{
+   margin: auto;
+    width: 70%;
+   
+}
+form .input-instrutor{
+   margin-left: 0px;
+    margin-bottom: 15px;
+}
+form .input-instrutor label{
+    color: #3D3D3D;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+form .input-instrutor input{
+
+    width: 100%;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+    display: flex;
+}
+form .input-instrutor input:focus{
+    border-color: #000;
+}
+form .input-instrutor button{
+    width: 120%;
+    height: 47px;
+    background: #0162ff;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: -30px;
+}
+
+
+form .input-instrutor button:hover{
+    background-color: #051cb2;
+    transition: 0.3s all;
+}
+
+
+@media (max-width:945px) {
+    .img-box{
+        display: none;
+    }
+    .box{
+        width: 700px;
+    }
+    .form-box-instrutor{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 720px){
+
+    body{
+        overflow: auto;
+    }
+
+    .form-box {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .w50{
+        width: 100%;
+        padding: 0;
+    }
+}
