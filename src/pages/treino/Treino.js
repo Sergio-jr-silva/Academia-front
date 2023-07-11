@@ -39,40 +39,39 @@ function Treino (){
 	const [dataInicio, setDataInicio] =  useState();
 	const [serie, setSerie] =  useState();
 	const [carga, setCarga] =  useState();
-  const [listaItem, setListaItem] = useState([]);
-  const [idItemTreino, setIdItemTreino] = useState();
+
+  const [listaExercicio, setListaExercicio] = useState([]);
+  const [idExercicio, setIdExercicio] = useState();
+
 
 
 
 
 	useEffect(() => {
 
-		if (state != null && state.id != null) {
-			
-			axios.get("http://localhost:8082/treino" + state.id)
-			.then((response) => {
-				setIdTreino(response.data.id)
-				setNome(response.data.nome)
-				setFrequencia(response.data.frequencia)
-				setDataInicio(response.data.dataInicio)
-        setListaItem(response.data.listaItem.id)
-			})
-		}
+      axios.get("http://localhost:8082/exercicio")
+       .then((response) => {
+           const dropDownCategorias = response.data.map(c => ({ label: c.nome, value: c.id }));
+           setListaExercicio(dropDownCategorias);
+       })
+
+		
 		
 	}, [state])
 
 	function salvar() {
 
-		let treino = {
+		let itemTreino = {
+      idExercicio: idExercicio,
 			nome: nome,
 			frequencia: frequencia,
 			dataInicio: dataInicio,
-      idItemTreino: idItemTreino
+    
 
 		}
     
-        axios.post("http://localhost:8082/treino", treino)
-			.then((response) => {  notifySuccess('Treino cadastrado com sucesso.') })
+        axios.post("http://localhost:8082/item-treino", itemTreino)
+			.then((response) => {  notifySuccess('item treino cadastrado com sucesso.') })
 			.catch((error) => { { if (error.response) {
                 notifyError(error.response.data.errors[0].defaultMessage)
                 } else {
@@ -127,15 +126,12 @@ function Treino (){
     
           <Select
           width={12}
-            isMulti
             placeholder="selecione o treino"
-            name="colors"
-            className="basic-multi-select"
-            classNamePrefix="select"
-            options={listaItem}
-	          value={idItemTreino}
+            options={listaExercicio}
+            value={idExercicio}          
 	        onChange={(e,{value}) => {
-		      setIdItemTreino(value)
+		      setIdExercicio(value)
+       
 	}}
 
          />

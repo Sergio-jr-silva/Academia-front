@@ -74,6 +74,7 @@ function ListaTreino(){
         <div className="modal-lista">
           <div className="modal-content-list">
             <h2 class="modal-h2">Treino de Ombros</h2>
+
             <thead>
                     <tr>
                         <th>Exercicios</th>
@@ -81,33 +82,34 @@ function ListaTreino(){
                         <th>Repetições</th>
                     </tr>
                 </thead>
-            <tbody >
+            <tbody>
                     <tr class="table-modal">
-                        <td>Treino de Pernas</td>
+                        <td>Flexão</td>
                         <td>1x</td>
-                        <td>10/07/2023</td>
+                        <td>15x</td>
                     </tr>
 
                     <tr class="table-modal">
-                        <td>Treino de Pernas</td>
-                        <td>1x</td>
-                        <td>10/07/2023</td>
+                        <td>Flexão Militar</td>
+                        <td>2x</td>
+                        <td>12x</td>
                     </tr>
 
 
                     <tr class="table-modal">
-                        <td>Treino de Pernas</td>
-                        <td>1x</td>
-                        <td>10/07/2023</td>
+                        <td>Flexão pyke</td>
+                        <td>2x</td>
+                        <td>15x</td>
                     </tr>
 
                     <tr class="table-modal">
-                        <td>Treino de Pernas</td>
-                        <td>1x</td>
-                        <td>10/07/2023</td>
+                        <td>Isometria</td>
+                        <td>3x</td>
+                        <td>10x</td>
                     </tr>
+                    
                 </tbody>
-            <button onClick={closeModal}>Fechar</button>
+            <button onClick={closeModal} class="fechar">Fechar</button>
           </div>
         </div>
       )}

@@ -76,10 +76,22 @@ hr {
     padding: 20px;
   }
   
-.table-modal{
-    margin-left: 50%;
+.modal-content-list{
+    margin-left: 30%;
+    margin-top: 36px;
     text-align: center;
 }
+
+.modal-h2{
+    margin-left: -35%;
+    margin-bottom: 30px;
+}
+
+.fechar{
+    margin-left: -10px;
+    width: 400px;
+}
+
 
   .overlay {
     position: fixed;

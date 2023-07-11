@@ -126,6 +126,10 @@ form .input-treino label{
   text-align: center;
 }
 
+options{
+    color: black;
+}
+
 .comentario{
     height: 150px;
     width: 300px;
